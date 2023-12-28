@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  border-bottom: 10px solid saddlebrown;
+}
+ul li {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(25, 169, 169);
+  list-style: none;
+  margin: auto 4px;
+  border-radius: 50%;
+  animation: ball 1s linear infinite alternate-reverse;
+}
+
+@keyframes ball {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+ul li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+ul li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+ul li:nth-child(5) {
+  animation-delay: 0.8s;
+}

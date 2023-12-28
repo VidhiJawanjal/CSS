@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidden Button</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background-color: rgb(36, 114, 86);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a,
+    a:hover {
+      text-decoration: none;
+    }
+    .searchBox {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .SearchText {
+      width: 0rem;
+      height: 3rem;
+      border-radius: 5rem;
+      border: none;
+      outline: none;
+      transition: all 0.2s linear;
+    }
+    .SearchText:focus {
+      outline: none;
+    }
+    .searchBtn {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgb(32, 101, 76);
+      color: white;
+      position: absolute;
+      right: 1rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+    }
+
+    .searchBox:hover .SearchText {
+      width: 25rem;
+      padding: 5px 20px;
+    }
+    .searchBox:hover .searchBtn {
+      background-color: white;
+      color: rgb(32, 101, 76);
+    }
+  </style>
+  <body>
+    <div class="searchBox">
+      <input type="text" class="SearchText" placeholder="Search" />
+      <a href="#" class="searchBtn">
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+      </a>
+    </div>
+  </body>
+</html>
